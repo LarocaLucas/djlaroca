@@ -115,11 +115,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── MOSAICO DINÂMICO ─────────────────────────────────────
   const mosaicGrid   = document.getElementById('mosaicGrid');
   const TOTAL_FOTOS  = 84;
-  const POSICOES     = 9;
+  const POSICOES     = 9; // Deve bater com o número de .mosaic-item no CSS
   const FOTOS_PATH   = 'assets/images/galeria/';
 
-  // Rotações fixas para cada posição (estilo mídia kit)
-  const rotacoes = [-10, 6, -5, 8, -7, 9, -4, 7, -6];
+  // Rotações definidas via CSS — array vazio pois o CSS já define o transform
+  const rotacoes = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 
   // Distribui as 84 fotos entre as 9 posições
   function distribuirFotos() {
