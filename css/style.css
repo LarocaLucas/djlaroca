@@ -131,9 +131,9 @@ nav.scrolled {
 .hero-bg {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 60% 80% at 70% 50%, rgba(155,48,255,0.18) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(106,0,212,0.12) 0%, transparent 60%),
-    var(--bg);
+    linear-gradient(to bottom, rgba(6,4,8,0.55) 0%, rgba(6,4,8,0.75) 60%, rgba(6,4,8,1) 100%),
+    linear-gradient(to right, rgba(106,0,212,0.3) 0%, transparent 60%),
+    url('../assets/images/foto-hero.jpg') center center / cover no-repeat;
 }
 .grid-lines {
   position: absolute; inset: 0;
@@ -230,6 +230,34 @@ nav.scrolled {
   text-transform: uppercase;
   margin-top: 0.2rem;
 }
+.hero-contratar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2.5rem;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+  color: white;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 1px solid var(--neon);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.hero-contratar-btn::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.08), transparent);
+}
+.hero-contratar-btn:hover {
+  box-shadow: 0 0 40px rgba(155,48,255,0.6);
+  transform: translateY(-2px);
+}
 .scroll-indicator {
   position: absolute;
   bottom: 2rem; left: 4rem;
@@ -318,7 +346,7 @@ section { padding: 8rem 4rem; }
 }
 .estilos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5px;
   margin-top: 3rem;
   background: rgba(155,48,255,0.15);
@@ -466,12 +494,51 @@ section { padding: 8rem 4rem; }
   color: white; text-decoration: none;
   font-family: 'Oswald', sans-serif; font-weight: 700;
   letter-spacing: 0.2em; text-transform: uppercase; font-size: 1rem;
-  transition: all 0.3s; margin-top: 1rem; position: relative; overflow: hidden;
+  transition: all 0.3s; margin-top: 0; position: relative; overflow: hidden;
 }
 .press-kit-btn:hover { box-shadow: 0 0 40px rgba(155,48,255,0.5); transform: translateY(-2px); }
 .press-kit-btn::after {
   content: ''; position: absolute; inset: 0;
   background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+}
+
+/* ---------- WHATSAPP ---------- */
+.contratar-wrap {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  align-items: stretch; justify-content: center; margin-top: 1rem;
+}
+.whatsapp-btn {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  padding: 1.2rem 3rem;
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+  color: white; text-decoration: none;
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase; font-size: 1rem;
+  transition: all 0.3s; position: relative; overflow: hidden;
+}
+.whatsapp-btn:hover { box-shadow: 0 0 40px rgba(155,48,255,0.5); transform: translateY(-2px); }
+.whatsapp-btn::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), transparent);
+}
+.whatsapp-float {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  display: flex; align-items: center; gap: 0.6rem;
+  background: linear-gradient(135deg, var(--purple-dark), var(--purple));
+  color: white; text-decoration: none;
+  padding: 0.85rem 1.4rem;
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  letter-spacing: 0.15em; font-size: 0.85rem; text-transform: uppercase;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4); transition: all 0.3s;
+  border: 1px solid var(--neon);
+}
+.whatsapp-float:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(155,48,255,0.5); }
+.whatsapp-float-label { white-space: nowrap; }
+@media (max-width: 480px) {
+  .whatsapp-float-label { display: none; }
+  .whatsapp-float { padding: 1rem; border-radius: 50%; }
+  .contratar-wrap { flex-direction: column; align-items: center; }
+  .whatsapp-btn { width: 100%; justify-content: center; }
 }
 
 /* ---------- FOOTER ---------- */
@@ -999,7 +1066,7 @@ section { padding: 8rem 4rem; }
 }
 .estilos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5px;
   margin-top: 3rem;
   background: rgba(155,48,255,0.15);
@@ -1147,7 +1214,7 @@ section { padding: 8rem 4rem; }
   color: white; text-decoration: none;
   font-family: 'Oswald', sans-serif; font-weight: 700;
   letter-spacing: 0.2em; text-transform: uppercase; font-size: 1rem;
-  transition: all 0.3s; margin-top: 1rem; position: relative; overflow: hidden;
+  transition: all 0.3s; margin-top: 0; position: relative; overflow: hidden;
 }
 .press-kit-btn:hover { box-shadow: 0 0 40px rgba(155,48,255,0.5); transform: translateY(-2px); }
 .press-kit-btn::after {

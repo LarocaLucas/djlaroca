@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── MOSAICO DINÂMICO ─────────────────────────────────────
   const mosaicGrid   = document.getElementById('mosaicGrid');
-  const TOTAL_FOTOS  = 84;
+  const TOTAL_FOTOS  = 109;
   const POSICOES     = 8;
   const FOTOS_PATH   = 'assets/images/galeria/';
 
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { rot:  10, zi: 4 },
   ];
 
-  // Distribui as 84 fotos entre as 9 posições
+  // Distribui as 109 fotos entre as 8 posições
   function distribuirFotos() {
     const todos = Array.from({ length: TOTAL_FOTOS }, (_, i) =>
       `${FOTOS_PATH}foto-${String(i + 1).padStart(3, '0')}.jpg`
