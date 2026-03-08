@@ -628,7 +628,7 @@ footer {
   /* Sobre mobile */
   #sobre { grid-template-columns: 1fr; gap: 3rem; }
   #sobre::before { display: none; }
-  .sobre-img-wrap img { aspect-ratio: 4/5; }
+  .sobre-img-wrap img { aspect-ratio: auto; object-fit: contain; }
 
   /* Estilos mobile */
   .estilos-grid { grid-template-columns: 1fr; }
@@ -1309,7 +1309,7 @@ footer {
   /* Sobre mobile */
   #sobre { grid-template-columns: 1fr; gap: 3rem; }
   #sobre::before { display: none; }
-  .sobre-img-wrap img { aspect-ratio: 4/5; }
+  .sobre-img-wrap img { aspect-ratio: auto; object-fit: contain; }
 
   /* Estilos mobile */
   .estilos-grid { grid-template-columns: 1fr; }
