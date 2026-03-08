@@ -2,7 +2,7 @@
 
 Site institucional de DJ Laroca (Lucas Laroca Campos), especializado em Funk e Rave Funk.
 
-🔗 **https://larocaslucas.github.io/djlaroca-site**
+🔗 **https://larocalucas.github.io/djlaroca**
 
 ---
 
