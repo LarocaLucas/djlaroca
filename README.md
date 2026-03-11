@@ -1,74 +1,73 @@
 # DJ Laroca — Site Oficial
 
-Site institucional de DJ Laroca (Lucas Laroca Campos), especializado em Funk e Rave Funk.
+Site institucional do DJ Laroca, desenvolvido para apresentação profissional e captação de clientes para eventos de Funk e Rave Funk.
 
-🔗 **https://larocalucas.github.io/djlaroca**
+🌐 **https://larocalucas.github.io/djlaroca/**
 
 ---
 
 ## Sobre o Artista
 
-- **Nome artístico:** DJ Laroca
-- **Nome completo:** Lucas Laroca Campos
-- **Cidade:** Castro / Ponta Grossa — PR
-- **Início:** 2014
-- **Gêneros:** Funk e Rave Funk
-- **Shows nacionais:** 20+
-- **Seguidores:** +4K
+DJ Laroca (Lucas Laroca Campos) é DJ de Funk e Rave Funk com início em 2014, atuando em Castro e Ponta Grossa — PR. Com mais de **20 shows** realizados e **+4K seguidores** nas redes sociais.
 
-## Redes Sociais
-
-- Instagram: [@dj_laroca](https://instagram.com/dj_laroca)
-- TikTok: [@dj_laroca](https://tiktok.com/@dj_laroca)
-- SoundCloud: [dj_laroca](https://soundcloud.com/dj_laroca)
-
-## Press Kit
-
-📁 [Acessar Press Kit no Google Drive](https://drive.google.com/drive/folders/1-Q24FeenKm2wEL18yjUqsuF2Bwv3JcTO?usp=drive_link)
+**Instagram:** [@dj_laroca](https://instagram.com/dj_laroca)  
+**TikTok:** [@dj_laroca](https://tiktok.com/@dj_laroca)  
+**SoundCloud:** [dj_laroca](https://soundcloud.com/dj_laroca)  
+**WhatsApp:** (42) 99988-4992
 
 ---
 
-## Tecnologias
+## Estilos Musicais
 
-- HTML5 + CSS3 + JavaScript Vanilla
-- Hospedagem: GitHub Pages
-- Fontes: Bebas Neue, Black Ops One, Space Mono, Oswald
+- Funk
+- Rave Funk
 
-## Estrutura
+---
 
-\`\`\`
+## Sobre o Site
+
+### Design
+- Estética underground/neon — preto e roxo
+- Fontes: **Bebas Neue** + **Black Ops One** + **Space Mono**
+- Galeria mosaico com rotação
+- Botão flutuante WhatsApp
+
+### Estrutura
+```
 /
 ├── index.html
-├── css/style.css
-├── js/main.js
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── favicon.ico
+├── favicon-32.png
+├── apple-touch-icon.png
 └── assets/
     └── images/
         ├── laroca-logo.png
         ├── foto-sobre.jpg
         ├── foto-evento1.jpg
         ├── foto-evento2.jpg
-        └── galeria/          # 84 fotos (foto-001.jpg … foto-084.jpg)
-\`\`\`
+        └── galeria/
+            └── foto-001.jpg … foto-084.jpg
+```
 
-## Seções
-
-1. **Hero** — Logo com efeito glitch, stats
-2. **Sobre** — Bio e foto
-3. **Estilos & Sonoridade** — Cards: Funk, Rave Funk, Sets Ao Vivo
-4. **Histórico** — Timeline desde 2014
-5. **Galeria** — Mosaico rotativo com 84 fotos + vídeos
-6. **Contato** — Redes sociais + Press Kit
-
-## Deploy
-
-\`\`\`bash
-git add .
-git commit -m "feat: descrição da mudança"
-git push
-\`\`\`
-
-O GitHub Actions faz o deploy automático no GitHub Pages.
+### Funcionalidades
+- Navegação fixa com scroll suave
+- Galeria mosaico com rotação aleatória
+- Botão flutuante WhatsApp
+- Press kit via Google Drive
+- SEO e Open Graph configurados
+- Favicon e Apple Touch Icon
+- Responsivo para mobile
 
 ---
 
-**Contato:** lucaslarocca18@gmail.com
+## Hospedagem
+
+Hospedado via **GitHub Pages** no repositório `LarocaLucas/djlaroca`.
+
+---
+
+*Desenvolvido por DJ Laroca*
