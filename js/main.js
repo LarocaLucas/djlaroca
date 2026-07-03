@@ -109,8 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.estilos-grid, .gallery-grid, .video-strip')
     .forEach((el) => staggerObserver.observe(el));
 
-});
-
 
   // ─── MOSAICO DINÂMICO ─────────────────────────────────────
   const mosaicGrid   = document.getElementById('mosaicGrid');
@@ -203,4 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
     buildMosaic(grupos);
     startSlideshow(grupos);
   }
+
+});
 
