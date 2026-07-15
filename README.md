@@ -2,7 +2,7 @@
 
 Site institucional do DJ Laroca, desenvolvido para apresentação profissional e captação de clientes para eventos de Funk e Rave Funk.
 
-🌐 **https://larocalucas.github.io/djlaroca/**
+🌐 **https://djlaroca.com.br/**
 
 ---
 
