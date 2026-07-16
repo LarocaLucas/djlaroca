@@ -279,12 +279,12 @@ nav.scrolled {
 /* ---------- VÍDEO HERO ---------- */
 .hero-video-wrap {
   position: absolute;
-  right: 6rem;
+  right: 12rem;
   top: 0;
   bottom: 0;
   margin: auto 0;
-  height: 45vh;
-  width: calc(45vh * 16 / 9);
+  height: 85vh;
+  width: calc(85vh * 9 / 16);
   z-index: 3;
   border-radius: 16px;
   overflow: hidden;
