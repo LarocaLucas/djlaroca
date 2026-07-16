@@ -279,12 +279,12 @@ nav.scrolled {
 /* ---------- VÍDEO HERO ---------- */
 .hero-video-wrap {
   position: absolute;
-  right: 12rem;
+  right: 6rem;
   top: 0;
   bottom: 0;
   margin: auto 0;
-  height: 85vh;
-  width: calc(85vh * 9 / 16);
+  height: 45vh;
+  width: calc(45vh * 16 / 9);
   z-index: 3;
   border-radius: 16px;
   overflow: hidden;
@@ -652,6 +652,7 @@ footer {
   
   .hero-bg { display: none !important; }
   .hero-video-wrap {
+    display: block !important;
     right: 0 !important; left: 0 !important; top: 0 !important; bottom: 0 !important;
     width: 100% !important; height: 100% !important;
     border-radius: 0 !important; border: none !important; box-shadow: none !important;
